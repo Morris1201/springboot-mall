@@ -24,11 +24,5 @@ public class ProductController {
         return Optional.ofNullable(product)
                 .map(p -> ResponseEntity.status(HttpStatus.OK).body(p))
                 .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
-//        if (product != null) {
-//            return ResponseEntity.status(HttpStatus.OK).body(product);
-//        } else {
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-//        }
-//    }
     }
 }
