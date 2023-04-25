@@ -2,9 +2,11 @@ package com.morris.springbootmall.dto;
 
 import com.morris.springbootmall.constant.ProductCategory;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 @Data
+@NoArgsConstructor
 public class ProductRequest {
 
     @NonNull
