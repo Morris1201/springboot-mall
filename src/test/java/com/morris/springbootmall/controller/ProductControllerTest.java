@@ -122,6 +122,7 @@ public class ProductControllerTest {
                 .content(json);
 
         mockMvc.perform(requestBuilder)
+
                 .andExpect(status().is(200))
                 .andExpect(jsonPath("$.productName", equalTo("test food product")))
                 .andExpect(jsonPath("$.category", equalTo("FOOD")))
